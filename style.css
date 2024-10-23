@@ -1,0 +1,108 @@
+:root {
+    --vermelho-bnb: #C8102E;  /* Vermelho Banco do Nordeste */
+    --laranja-bnb: #FF6A00;  /* Laranja Banco do Nordeste */
+    --amarelo: #F6EB61;      /* Amarelo */
+    --salmão: #FF9C9B;       /* Salmão */
+    --cinza: #A0A0A0;        /* Cinza */
+    --branco: #FFFFFF;       /* Branco */
+}
+
+/* Definir estilo básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--branco);
+    color: var(--cinza);
+}
+
+header {
+    background-color: var(--vermelho-bnb);
+    color: var(--branco);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+/* Estilo do formulário */
+form {
+    background-color: var(--branco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+/* Labels e Inputs */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #4b0082;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botões */
+button {
+    background-color: #800020; /* Bordô */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b0082; /* Muda para roxo ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--vermelho-bnb); /* Use o vermelho do BNB */
+    color: var(--branco);    
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Links */
+a {
+    color: #FFD700; /* Amarelo Dourado */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adicione isso ao seu CSS existente */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;            /* Defina uma largura para o formulário */
+    text-align: left;        /* Alinha o texto à esquerda dentro do formulário */
+}

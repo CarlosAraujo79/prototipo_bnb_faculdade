@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Banco do Nordeste</title>
+</head>
+<body>
+    <header>
+        <h1>Banco do Nordeste</h1>
+        <h2>Acesso ao Sistema de Projetos</h2>
+    </header>
+
+    <div class="container">
+        <form action="/login" method="post">
+            <label for="tipo_usuario">Tipo de Usuário:</label>
+            <select id="tipo_usuario" name="tipo_usuario" required>
+                <option value="analista">Analista</option>
+                <option value="cliente">Cliente</option>
+            </select>
+
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Banco do Nordeste - Todos os direitos reservados © 2024</p>
+    </footer>
+</body>
+</html>

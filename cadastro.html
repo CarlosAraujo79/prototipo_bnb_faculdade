@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco do Nordeste - Simulação de Projetos</title>
+</head>
+<body>
+    <h1>Cadastrar Novo Projeto</h1>
+    <form action="/cadastro" method="post">
+        <label for="nome_cliente">Nome do Cliente:</label>
+        <input type="text" id="nome_cliente" name="nome_cliente" required>
+        <label for="valor_projeto">Valor do Projeto:</label>
+        <input type="number" id="valor_projeto" name="valor_projeto" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <p><a href="{{ url_for('index') }}">Voltar à Página Inicial</a></p>
+</body>
+</html>
